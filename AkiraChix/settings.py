@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +45,8 @@ INSTALLED_APPS = [
     'course',
     'api',
     'rest_framework',
+    'core',
+
    
 ]
 
@@ -130,6 +133,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'student/media')
 STATIC_ROOT = MEDIA_ROOT
+LOGIN_REDIRECT_URL = '/'
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'teacher/media')
